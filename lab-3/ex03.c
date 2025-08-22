@@ -1,22 +1,31 @@
 #include<stdio.h>
 int main()
 {
-    int num;
-    printf("Enter a number: ");
-    scanf("%d",&num);
-int inrange =(num >= 1 && num <=100);
-switch (inrange)
-{
-    case 1 :
-         switch (num %2) {
-            case 0 : printf ("%d is even\n",num);
-                     break;
-            case 1 : printf ("%d is odd\n",num);
-                     break;
-         }
-         break;
-    case 0 : printf ("%d out of range\n",num);
-             break;
-}
-    return 0;
-}
+    char name[25];
+    int age;
+    float height;
+    float weight;
+    char gender;
+    char education[50];
+
+    printf("Enter your Name:\n");
+    scanf(" %[^\n]",name);
+    printf("Enter your age:\n");
+    scanf("%d",&age);
+    printf("Enter your height:\n");
+    scanf("%f",&height);
+    printf("Enter your weight:\n");
+    scanf("%f",&weight);
+    printf("Enter your gender:\n");
+    scanf("%s",&gender);
+    printf("Enter your education qualification:\n");
+    scanf(" %[^\n]",education);
+
+    return(0);
+}    
+    
+ 
+
+    
+
+    

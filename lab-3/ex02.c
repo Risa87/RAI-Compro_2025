@@ -1,19 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int num;
-    printf("Enter a number: ");
-    scanf("%d",&num);
+    int total,mins,hrs;
 
-    if (num >=1 && num <=100)
-        if (num %2 == 0){
-            printf ("%d is even\n",num);
-           }
-        else{
-            printf ("%d is odd\n",num);
-           }
-        else{
-            printf("%d out of range\n",num);
-        }
-        return 0;
+    printf("Enter total minutes:");
+    scanf("%d",&total);
+
+    mins= total / 60;
+    hrs= total % 60;
+
+    printf("%d mins is %d hrs, and %d mins\n",total,mins,hrs);
+    return 0;
 }

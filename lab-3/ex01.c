@@ -1,16 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int a;
-    int b;
-    printf("Enter a number: ");
-    scanf("%d",&a);
-    printf("Enter a number: ");
-    scanf("%d",&b);
-    if(a==b)
-        printf("Match");
-    else
-    printf("Try again");
+    int inti;
+    float value;
+    char name;
+
+    printf("Please enter an integer value: ");
+    scanf("%d",&inti);
+    printf("You entered; %d\n",inti);
+
+    printf("Please enter a float value: ");
+    scanf("%f",&value);
+    printf("You entered; %.1f\n",value);
+
+    printf("Please enter a character: ");
+    scanf("%s",&name);
+    printf("You entered; %c\n",name);
+   
+   
     
-    return 0;
 }

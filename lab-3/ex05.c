@@ -1,22 +1,27 @@
 #include<stdio.h>
-#define PI 3.1416
+int main()
+{
+    char name[50];
+    int age;
+    float height;
+    char university[50];
+         
+        printf("Enter your name:\n");
+        scanf("%[^\n]",name);     
 
-int main() {
-    float height, radius, volume;
+        printf("Enter your age:\n");
+        scanf("%d",&age);
 
-    printf("Enter cone height: ");
-    scanf("%f", &height);
+        printf("Enter your height:\n");
+        scanf("%f",&height);
 
-    printf("Enter cone base radius: ");
-    scanf("%f", &radius);
-
-    volume = (1.0 / 3.0) * PI * radius * radius * height;
-
-    printf("Cone volume = %.1f\n", volume);
-
-    if(volume > 260)
-       printf("This cone is perfect for Supun project\n");
-    else
-       printf("This cone is not fit for this project\n");
-    return 0;
+        printf("Enter your university name:\n");
+        scanf(" %[^\n]",university); 
+        
+        printf("Hi! Everyone. This is K. %s from %s. I am %d yrs old and my height is %3.1f cm tall", name,university,age,height);
+        
+        return 0;
 }
+        
+
+        

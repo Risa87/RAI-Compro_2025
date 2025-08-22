@@ -1,37 +1,31 @@
 #include<stdio.h>
-int main ()
+int main()
 {
-    char grade,name[20];
-    int score1,score2,score3;
+    char name[10];
+    int studentid;
+    float programming, physics, calculus, gpa;
 
-    printf("Enter your name: ");
-    scanf("%s", name);
+    printf("Enter your name:\n");
+    scanf("%[^\n]",name);
 
-    printf("Enter your Calculus score: ");
-    scanf("%d",&score1);
+    printf("Enter your student id:\n");
+    scanf("%d", &studentid);
 
-    printf("Enter your Physics score: ");
-    scanf("%d",&score2);
+    printf("Enter your programming:\n");
+    scanf("%f", &programming);
 
-    printf("Enter your Science score: ");
-    scanf("%d",&score3);
+    printf("Enter your physics score:\n");
+    scanf("%f", &physics);
 
-    float Average=(score1+score2+score3)/3;
+    printf("Enter your calculas score:\n");
+    scanf("%f", &calculus);
 
-    if(Average>=80){
-        grade='A';
-    
-    }else if(Average >=70 && Average <80){
-        grade='B';
-    }else if(Average >=60 && Average <70){
-        grade='C';
-    }else if(Average >=50 && Average <60){
-        grade='D';
-    }else if(Average <50){
-        grade='F';}
+    gpa= (programming + physics + calculus)/3;
+    printf("Hi %s(%d) Your GPA is %.2f\n", name, studentid ,gpa);
 
-        printf("%s, your average is %.2f you got grade%c",name,Average,grade);
-
-        return 0;
+    return 0;
 
 }
+
+
+

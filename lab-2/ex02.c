@@ -1,14 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int total,mins,hrs;
-
-    printf("Enter total minutes:");
-    scanf("%d",&total);
-
-    mins= total / 60;
-    hrs= total % 60;
-
-    printf("%d mins is %d hrs, and %d mins\n",total,mins,hrs);
+    printf("My name is : %s\n", "Risa Namkod");
+    printf("I am : %dyears old\n", 19);
+    printf("I am : %fcm tall\n", 160.00);
     return 0;
 }
