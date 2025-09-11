@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    struct product{
+        char name[15];
+        int count;
+        float price;
+    };
+
+
+    struct product pr1,pr2;
+    pr1.count = 10;
+    pr2.count = 30;
+    pr1.price = 130.5;
+    pr2.price = 240.75;
+
+    strcpy(pr1.name, "Programming");
+
+    printf("Product 1: %s, count=%d, price=%.2f\n", pr1.name, pr1.count, pr1.price);
+    printf("Product 2: %s, count=%d, price=%.2f\n", pr2.name, pr2.count, pr2.price);
+
+    return 0;
+}
